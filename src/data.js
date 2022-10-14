@@ -1,7 +1,9 @@
+
+
 export const sliderItems = [
     {
         id: 1,
-        img: "https://www.pngplay.com/wp-content/uploads/1/Fashion-Girl-Free-Commercial-Use-PNG-Image.png",
+        img: "Asset/slider1.png",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
         title: "SUMMER SALE",
         bg: "f5fafd"
@@ -10,7 +12,7 @@ export const sliderItems = [
 
     {
         id: 2,
-        img: "https://i.pinimg.com/originals/ed/a4/21/eda4216e6a7026a76b898cc89b103c5d.png",
+        img: "Asset/slider2.png",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
         title: "AUTUMN COLLECTION",
         bg: "fbf0f4"
@@ -19,7 +21,7 @@ export const sliderItems = [
 
     {
         id: 3,
-        img: "https://www.freeiconspng.com/uploads/photorenders-femme-model-style-mode--png-12.png",
+        img: "Asset/slider3.png",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
         title: "WINTER SALE",
         bg: "fcf1ed"
@@ -31,17 +33,17 @@ export const sliderItems = [
 export const categories = [
     {
         id: 1,
-        img: "https://source.boomplaymusic.com/buzzgroup2/M00/34/1A/rBEe_GJUR4eAGie1AAHX6HnZB4o007.jpg",
+        img: "Asset/categories1.jpeg",
         title: "SHIRT STYLE"
     },
     {
         id: 2,
-        img: "https://media.istockphoto.com/photos/african-american-woman-in-jacket-with-hands-in-pockets-looking-at-picture-id1207472153?k=20&m=1207472153&s=612x612&w=0&h=aYoMBd2aQoowzUGpLqEKQIS1AnI6I6Mx1qXWGs8smXM=",
+        img: "Asset/categories2.jpeg",
         title: "LOUNGEWEAR LOVE"
     },
     {
         id: 3,
-        img: "https://www.themanual.com/wp-content/uploads/sites/9/2020/12/chris-hemsworth-boss-bottled-2017-campaign.jpg?fit=800%2C532&p=1",
+        img: "Asset/categories3.webp",
         title: "SUITE WEAR"
     },
 ]
@@ -49,34 +51,52 @@ export const categories = [
 export const popularProducts =[
     {
         id: 1,
-        img: ""
+        img:"Asset/product1.png"
     },
     {
         id: 2,
-        img: ""
+        img:"Asset/product2.png"
     },
     {
         id: 3,
-        img: ""
+        img:"Asset/product14.png"
     },
     {
         id: 4,
-        img: ""
+        img:"Asset/product4.png"
     },
     {
         id: 5,
-        img: ""
+        img:"Asset/product5.png"
     },
     {
         id: 6,
-        img: ""
+        img:"Asset/product6.png"
     },
     {
         id: 7,
-        img: ""
+        img:"Asset/product7.png"
     },
     {
         id: 8,
-        img: ""
+        img:"Asset/product8.png"
     },
+
+    {
+        id: 9,
+        img:"Asset/product9.png"
+    },
+    {
+        id: 10,
+        img: "Asset/product13.png"
+    },
+    {
+        id: 11,
+        img: "Asset/product11.png"
+    },
+    {
+        id: 12,
+        img: "Asset/product12.png"
+    },
+    
 ]
