@@ -122,8 +122,8 @@ margin: 0 5px;
 function Product() {
   return (
     <Container>
-        <Announcement/>
         <Navbar />
+        <Announcement/>
         <Wrapper>
             <ImgContainer>
             <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
