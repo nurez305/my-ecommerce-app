@@ -6,9 +6,11 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import PlaceIcon from '@material-ui/icons/Place';
 import LocalPhoneIcon from '@material-ui/icons/LocalPhone';
 import EmailIcon from '@material-ui/icons/Email';
+import {mobile} from '../responsive'
 
 const Container = styled.div `
    display: flex; 
+   ${mobile({flexDirection: "column"})}
 `
 
 const Left = styled.div `
@@ -50,6 +52,7 @@ margin-right: 20px;
 const Center = styled.div `
     flex: 1;
     padding: 20px;
+    ${mobile({display: "none"})}
 `
 
 const Title = styled.h3`
