@@ -1,13 +1,13 @@
-import Cart from "./pages/Cart";
+import Home from "./pages/Home";
 // import Cart from "./pages/Cart";
 
 
 function App() {
   return (
     <div>
-      {/* <Home /> */}
+      <Home />
       {/* <Cart/> */}
-      <Cart />
+      {/* <Product /> */}
     </div>
   );
 }
