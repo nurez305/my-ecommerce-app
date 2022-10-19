@@ -6,6 +6,7 @@ import {mobile} from '../responsive'
 
 
 
+
 const Container = styled.div`
     display: flex;
     padding: 20px;
@@ -16,9 +17,11 @@ const Container = styled.div`
 function Categories() {
   return (
     <Container>
+      
         {categories.map(item => (
-            <CategoriesItem item={item} key={item.id}/>
-        ))}
+          <CategoriesItem item={item} key={item.id}/>
+          ))}
+          
     </Container>
   )
 }

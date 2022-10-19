@@ -3,6 +3,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 
 
@@ -85,7 +86,9 @@ function Product({item}) {
         </Icon>
 
         <Icon>
+          <Link to={`/product/${item._id}`}>
           <SearchIcon/>
+          </Link>
         </Icon>
 
 

@@ -34,17 +34,20 @@ export const categories = [
     {
         id: 1,
         img: "Asset/categories1.jpeg",
-        title: "SHIRT STYLE"
+        title: "SHIRT STYLE",
+        cat: "coat"
     },
     {
         id: 2,
         img: "Asset/categories2.jpeg",
-        title: "LOUNGEWEAR LOVE"
+        title: "LOUNGEWEAR LOVE",
+        cat : "jeans"
     },
     {
         id: 3,
         img: "Asset/categories3.webp",
-        title: "SUITE WEAR"
+        title: "SUITE WEAR",
+        cat : "woman"
     },
 ]
 

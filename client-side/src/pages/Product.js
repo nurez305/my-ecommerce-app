@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Announcement from '../components/Announcement'
@@ -7,6 +7,8 @@ import Footer from '../components/Footer'
 import RemoveIcon from '@material-ui/icons/Remove';
 import AddIcon from '@material-ui/icons/Add';
 import {mobile} from "../responsive"
+import {useLocation} from 'react-router-dom'
+import {publicRequest} from '../requestMethod'
 
 
 const Container = styled.div`
@@ -126,30 +128,58 @@ margin: 0 5px;
 
 
 function Product() {
+    const location = useLocation()
+    const id = location.pathname.split("/")[2]
+    const [product, setProduct] = useState({});
+    const [quantity, setQuantity] = useState(1);
+    const [color, setColor] = useState("");
+    const [size, setSize] = useState("");
+    // const dispatch = useDispatch();
+
+    useEffect(() => {
+        const getProduct = async () => {
+          try {
+            const res = await publicRequest.get("/products/find/" + id);
+            setProduct(res.data);
+          } catch {}
+        };
+        getProduct();
+      }, [id]);
+    
+    //   const handleQuantity = (type) => {
+    //     if (type === "dec") {
+    //       quantity > 1 && setQuantity(quantity - 1);
+    //     } else {
+    //       setQuantity(quantity + 1);
+    //     }
+    //   };
+    
+    //   const handleClick = () => {
+    //     dispatch(
+    //       addProduct({ ...product, quantity, color, size })
+    //     );
+    //   };
+
   return (
     <Container>
         <Navbar />
         <Announcement/>
         <Wrapper>
             <ImgContainer>
-            <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+            <Image src={product.img} />
             </ImgContainer>
 
             <InfoContainer>
-                <Title> Denin Jumpsuite</Title>
-                <Desc>You can configure most Dynamic Select controls
-                     in a harness, section, or flow action directly,
-                      while completing the Harness, Section, or Flow 
-                      rule form. That approach is simpler and easier to build 
-                    and test than the older approach described here.  </Desc>
-                <Price> ₦2000</Price>
+                <Title>{product.title}</Title>
+                <Desc>{product.desc} </Desc>
+                <Price> {product.price}</Price>
 
                 <FilterContainer>
                     <Filter>
                         <FilterTitle>Color</FilterTitle>
-                        <FilterColor color="black" />
-                        <FilterColor color="darkblue" />
-                        <FilterColor color="gray" />
+                {product.color.map((c)=>(
+                   <FilterColor color={c} key={c} />
+                ))}
                     </Filter>
 
                     <Filter>
